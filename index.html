@@ -1,1 +1,333 @@
-https://neededcoast23.github.io/privacy-policy/
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Mary’s Valentine — Developer Site</title>
+
+    <meta
+      name="description"
+      content="Official developer site for Mary’s Valentine. Find privacy policy, app-ads.txt, and developer information."
+    />
+
+    <meta property="og:title" content="Mary’s Valentine — Developer Site" />
+    <meta
+      property="og:description"
+      content="Privacy Policy, app-ads.txt, and developer links for Mary’s Valentine."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://neededcoast23.github.io/" />
+
+    <style>
+      :root{
+        --bg0:#07060a;
+        --bg1:#0b0a14;
+        --card:rgba(255,255,255,.06);
+        --card2:rgba(255,255,255,.10);
+        --text:rgba(255,255,255,.92);
+        --muted:rgba(255,255,255,.70);
+        --muted2:rgba(255,255,255,.55);
+        --border:rgba(255,255,255,.14);
+        --pink:#ff4fd8;
+        --violet:#7c5cff;
+        --cyan:#35d7ff;
+        --gold:#ffd27a;
+        --shadow: 0 20px 60px rgba(0,0,0,.55);
+      }
+
+      *{ box-sizing:border-box; }
+      html,body{ height:100%; }
+      body{
+        margin:0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+        color:var(--text);
+        background:
+          radial-gradient(1200px 800px at 15% 10%, rgba(124,92,255,.22), transparent 55%),
+          radial-gradient(900px 700px at 85% 20%, rgba(255,79,216,.18), transparent 55%),
+          radial-gradient(900px 700px at 55% 90%, rgba(53,215,255,.12), transparent 60%),
+          linear-gradient(180deg, var(--bg0), var(--bg1));
+      }
+
+      .noise{
+        position:fixed; inset:0;
+        pointer-events:none;
+        opacity:.12;
+        background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='210' height='210'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='210' height='210' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+      }
+
+      .wrap{
+        max-width:1100px;
+        margin:0 auto;
+        padding:48px 18px 72px;
+      }
+
+      header{
+        display:flex;
+        gap:18px;
+        align-items:flex-start;
+        justify-content:space-between;
+        flex-wrap:wrap;
+      }
+
+      .brand{
+        display:flex;
+        gap:14px;
+        align-items:center;
+      }
+
+      .sigil{
+        width:52px; height:52px;
+        border-radius:14px;
+        background:
+          radial-gradient(16px 16px at 30% 30%, rgba(255,210,122,.35), transparent 70%),
+          radial-gradient(24px 24px at 70% 35%, rgba(255,79,216,.25), transparent 70%),
+          radial-gradient(26px 26px at 55% 75%, rgba(124,92,255,.28), transparent 70%),
+          rgba(255,255,255,.06);
+        border:1px solid var(--border);
+        box-shadow: var(--shadow);
+        position:relative;
+      }
+      .sigil:before{
+        content:"";
+        position:absolute; inset:10px;
+        border-radius:12px;
+        border:1px solid rgba(255,255,255,.14);
+      }
+
+      h1{
+        margin:0;
+        font-size:28px;
+        letter-spacing:.2px;
+        line-height:1.15;
+      }
+      .subtitle{
+        margin:6px 0 0;
+        color:var(--muted);
+        max-width:62ch;
+        font-size:14px;
+        line-height:1.5;
+      }
+
+      .pillrow{
+        display:flex;
+        gap:10px;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:flex-end;
+      }
+      .pill{
+        padding:8px 12px;
+        border-radius:999px;
+        border:1px solid var(--border);
+        background: rgba(255,255,255,.05);
+        color:var(--muted);
+        font-size:12px;
+        text-decoration:none;
+      }
+
+      .hero{
+        margin-top:22px;
+        padding:22px;
+        border-radius:18px;
+        border:1px solid var(--border);
+        background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+        box-shadow: var(--shadow);
+        overflow:hidden;
+        position:relative;
+      }
+      .hero:after{
+        content:"";
+        position:absolute;
+        inset:-2px;
+        background: radial-gradient(600px 220px at 25% 20%, rgba(255,79,216,.16), transparent 60%),
+                    radial-gradient(520px 260px at 75% 10%, rgba(53,215,255,.12), transparent 62%),
+                    radial-gradient(520px 260px at 60% 90%, rgba(124,92,255,.14), transparent 62%);
+        pointer-events:none;
+        filter: blur(0px);
+      }
+      .hero > *{ position:relative; }
+
+      .grid{
+        display:grid;
+        grid-template-columns: 1.25fr .75fr;
+        gap:16px;
+        margin-top:16px;
+      }
+      @media (max-width: 900px){
+        .grid{ grid-template-columns: 1fr; }
+      }
+
+      .card{
+        padding:18px;
+        border-radius:16px;
+        border:1px solid var(--border);
+        background: var(--card);
+      }
+
+      .card h2{
+        margin:0 0 8px;
+        font-size:16px;
+        letter-spacing:.2px;
+      }
+      .card p{
+        margin:0 0 12px;
+        color:var(--muted);
+        font-size:13px;
+        line-height:1.55;
+      }
+
+      .actions{
+        display:flex;
+        gap:10px;
+        flex-wrap:wrap;
+      }
+
+      .btn{
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        padding:11px 12px;
+        border-radius:12px;
+        border:1px solid var(--border);
+        background: rgba(255,255,255,.06);
+        color:var(--text);
+        text-decoration:none;
+        font-size:13px;
+        transition: transform .08s ease, background .12s ease, border-color .12s ease;
+      }
+      .btn:hover{
+        transform: translateY(-1px);
+        background: rgba(255,255,255,.09);
+        border-color: rgba(255,255,255,.22);
+      }
+
+      .btn.primary{
+        background: linear-gradient(135deg, rgba(255,79,216,.20), rgba(124,92,255,.18));
+        border-color: rgba(255,79,216,.30);
+      }
+
+      .meta{
+        display:grid;
+        gap:10px;
+      }
+      .kv{
+        padding:12px 12px;
+        border-radius:14px;
+        border:1px solid var(--border);
+        background: rgba(255,255,255,.05);
+      }
+      .k{
+        color:var(--muted2);
+        font-size:11px;
+        letter-spacing:.25px;
+        text-transform:uppercase;
+      }
+      .v{
+        margin-top:4px;
+        font-size:13px;
+        color:var(--text);
+        word-break:break-word;
+      }
+      .v a{ color: rgba(255,255,255,.90); }
+      .hint{
+        margin-top:8px;
+        color:var(--muted2);
+        font-size:12px;
+        line-height:1.5;
+      }
+
+      footer{
+        margin-top:18px;
+        color:var(--muted2);
+        font-size:12px;
+        display:flex;
+        justify-content:space-between;
+        gap:10px;
+        flex-wrap:wrap;
+      }
+
+      code{
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size:12px;
+        color: rgba(255,255,255,.88);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="noise"></div>
+
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="sigil" aria-hidden="true"></div>
+          <div>
+            <h1>Mary’s Valentine</h1>
+            <div class="subtitle">
+              Developer site and public resources for the game. Use the links below for store compliance and advertising verification.
+            </div>
+          </div>
+        </div>
+
+        <div class="pillrow">
+          <a class="pill" href="https://neededcoast23.github.io/" rel="noopener">neededcoast23.github.io</a>
+          <span class="pill">Dark Neon Theme</span>
+          <span class="pill">Mobile Friendly</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="grid">
+          <div class="card">
+            <h2>Quick Links</h2>
+            <p>
+              These are the official public endpoints commonly required by Google Play / AdMob.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="/app-ads.txt">Authorized Sellers (app-ads.txt)</a>
+              <a class="btn" href="https://neededcoast23.github.io/privacy-policy/">Privacy Policy</a>
+            </div>
+            <div class="hint">
+              AdMob checks <code>/app-ads.txt</code> at the root of the domain (example: <code>https://neededcoast23.github.io/app-ads.txt</code>).
+            </div>
+          </div>
+
+          <div class="meta">
+            <div class="kv">
+              <div class="k">Developer Website</div>
+              <div class="v"><a href="https://neededcoast23.github.io/">https://neededcoast23.github.io/</a></div>
+              <div class="hint">Use this as “Developer website” in Google Play Console.</div>
+            </div>
+
+            <div class="kv">
+              <div class="k">app-ads.txt URL</div>
+              <div class="v"><a href="https://neededcoast23.github.io/app-ads.txt">https://neededcoast23.github.io/app-ads.txt</a></div>
+              <div class="hint">Must return HTTP 200 and contain your AdMob line.</div>
+            </div>
+
+            <div class="kv">
+              <div class="k">Privacy Policy URL</div>
+              <div class="v"><a href="https://neededcoast23.github.io/privacy-policy/">https://neededcoast23.github.io/privacy-policy/</a></div>
+              <div class="hint">You can keep it as a separate project page.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div>© <span id="y"></span> Mary’s Valentine</div>
+        <div>Last updated: <span id="d"></span></div>
+      </footer>
+    </div>
+
+    <script>
+      const now = new Date();
+      document.getElementById("y").textContent = String(now.getFullYear());
+      document.getElementById("d").textContent = now.toLocaleDateString("en-GB", {
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+      });
+    </script>
+  </body>
+</html>
